@@ -1,0 +1,471 @@
+/* Fonts are found in the Custom.css file */
+
+/* UTILITIES  */
+.text-center {
+    text-align: center !important;
+  }
+
+  .container {
+    max-width: 1380px !important;
+    margin: 0 auto !important;
+    padding: 2.5rem;
+    overflow: hidden !important;
+  }
+
+  .container_pad {
+    padding: 80px 2.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 14px 30px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .btn:hover {
+    transform: scale(0.98 );
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid;
+  }
+
+  .no-pad {
+    padding: 0;
+  }
+
+  .no-up-pad {
+    padding: 0 2.5rem
+  }
+  
+
+
+  /* ===============================
+   BANNER SECTION START 
+  ================================== */
+
+  .banner_bg {
+    background-color: #021B27;
+  }
+
+  .banner_items{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner_text {
+    /* margin-left: 160px; */
+    max-width: 620px;
+    color: #fff !important;
+    margin: 100px 0;
+  }
+  
+  .banner_text h1 {
+    color: #fff;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+  }
+
+  .banner_unique_text {
+    color: #85EAFF;
+  }
+
+  .banner_text p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    padding-bottom: 48px;
+  }
+
+  /* Banner Image */
+  .banner_image {
+    max-width: 590px;
+  }
+  .banner_image img {
+    width: 100%;
+    padding-top: 20px;
+    height: 100%;
+  }
+
+  /* Banner Buttons */
+
+  .start_btn {
+    background-color: #00B8DE;
+  }
+
+  /* Banner Section End */
+
+
+/* ===============================
+   MONITOR PAYMENTS SECTION START 
+  ================================== */
+
+  .monitor-payments {
+    background-color: #EBF8FE;
+  }
+
+  .payment_features_flex {
+    padding-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .font-bg {
+    height: 50px;
+    width: 50px;
+    background-color: #6EB4E0;
+    padding: 22px;
+    border-radius: 50%;
+  }
+
+  .font-bg i {
+   vertical-align: middle;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .payment_feature:hover .font-bg {
+    animation: avatar-pulse 2s infinite;
+    transition: background-color 0.5s;
+    transition: 0.5s ease all;
+  }
+  
+  @keyframes avatar-pulse {
+    0% {
+      box-shadow: 0 0 0 0 #A8D6EF;
+    }
+    100% {
+      box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+  } 
+
+  .payment_feature {
+    padding-bottom: 60px;
+  }
+
+  .payment_feature_text {
+    max-width: 347px;
+    padding-top: 20px;
+  }
+
+  .payment_feature_text h3 {
+    padding-bottom: 8px;
+  }
+
+  .icon_container {
+    padding-bottom: 20px;
+  }
+
+  /* ===============================
+   AFRICAN BUSINESSES SECTION START 
+  ================================== */
+
+  .african_businesses {
+    background: #021B27;
+  }
+
+  .african_businesses_heading {
+    text-align: center;
+    font-family: Averta;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  .african_businesses_flex {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .business_image {
+    max-width: 170px;
+  }
+
+  .business_image img {
+    width: 100%;
+  }
+
+  /* ===============================
+   SCALE YOUR BUSINESS SECTION START 
+  ================================== */
+  .scale_cards_flex {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+  .scale_card {
+    width: 360px;
+    /* height: 100%; */
+    /* flex: 1; */
+    color: #333;
+    padding: 25px;
+    margin: 10px;
+    background: #FFF;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+  }
+
+  .activate_feature_btn {
+    padding: 12px 16px;
+    border-radius: 40px;
+    border: 1px solid #000;
+  }
+
+  .scale_card_image {
+    max-width: 295px;
+    margin-top: 35px;
+  }
+
+  .scale_card_image img {
+    width: 100%;
+  }
+
+  .scale_card:hover .scale_card_image {
+    transform: scale(1.1 );
+  }
+
+  .scale_card:hover .activate_feature_btn {
+    background-color: #00B8DE;
+    color: #fff;
+    border: none;
+  }
+
+/* ===============================
+   INTEGRATE SECTION START 
+================================== */
+
+.integrate_flex {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden !important;
+}
+
+.integrate_text {
+    max-width: 532px;
+    padding-bottom: 55px;
+    padding-top: 20px;
+}
+
+.integrate_text h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    padding-bottom: 12px;
+}
+
+.dashbaord_features_flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.dashboard_features {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboard_features i {
+    color: #7BC6E4;
+}
+
+.integrate_btn {
+    padding-top: 48px;
+   
+}
+
+
+.dashboard_img {
+    overflow: hidden !important;
+  height: 100%;
+}
+
+.dashboard_img img {
+    position: absolute;
+    right: 0px;
+    /* width: 550px; */
+}
+
+.dashbaord_responsive  {
+    display: none;
+}
+
+/* ===============================
+   SUBSCRIBE SECTION START 
+================================== */
+
+.subscribe_main {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subscribe_main h3{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    padding-bottom: 8px;
+}
+
+.subscribe_main p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* Form area */
+
+.form {
+    padding-top: 32px;
+}
+
+.form__email {
+    padding: 16px 25px;
+	border-radius: 5px;
+ 	border: 1px solid #CAD3DB;
+	/* width: 431px; */
+	font-size: 18px;
+	color: #0F121F;
+}
+
+.subscribe_btn {
+   background-color: #00B8DE;
+   padding: 22px 40px;
+}
+
+
+/* ===============================
+   RESPOSNSIVE STYLING HERE
+================================== */
+
+@media (max-width: 1080px) {
+    .dashboard_normal {
+        display: none;
+    }
+
+    .dashbaord_responsive {
+        display: block;
+    }
+
+    .dashboard_img img {
+        position:unset;
+        width: 100%;
+        /* width: 550px; */
+    }
+
+    .dashboard_img {
+        max-width: 550px;
+    }
+
+    .integrate_flex {
+        display: flex;
+        overflow: hidden !important;
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media (max-width: 991px) {
+    .banner_items {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .business_image {
+        max-width: 130px;
+    }
+
+    .african_businesses_flex {
+        flex-wrap: wrap;
+    }
+
+    .dashbaord_features_flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner_text h1 {
+        color: #fff;
+        font-size: 37px;
+        line-height: 46px;
+    }
+
+    .form__email {
+        margin-bottom: 16px;
+    }
+
+    .form {
+        width: fit-content;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .subscribe_btn { 
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner_text h1 {
+        color: #fff;
+        font-size: 21px;
+        line-height: 30px;
+        padding-bottom: 16px;
+    }
+
+    .banner_text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .payments-top-text h2 {
+        font-size: 20px;
+    }
+
+    .business_image {
+        max-width: 100px;
+    }
+
+    .african_businesses_flex {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 19px;
+        align-items: center;
+    }
+
+   
+}
+
+@media (max-width: 375px) {
+    .btn {
+        padding: 14px 12px;
+    }
+}
