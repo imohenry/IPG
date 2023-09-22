@@ -262,7 +262,6 @@
 
 .integrate_text h2 {
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: 36px;
     padding-bottom: 12px;
@@ -290,12 +289,10 @@
 
 .integrate_btn {
     padding-top: 48px;
-   
 }
 
-
 .dashboard_img {
-    overflow: hidden !important;
+  overflow: hidden !important;
   height: 100%;
 }
 
@@ -335,7 +332,6 @@
 }
 
 /* Form area */
-
 .form {
     padding-top: 32px;
 }
@@ -353,7 +349,6 @@
    background-color: #00B8DE;
    padding: 22px 40px;
 }
-
 
 /* ===============================
    RESPOSNSIVE STYLING HERE
@@ -383,8 +378,6 @@
         overflow: hidden !important;
         flex-direction: column;
     }
-
-
 
 }
 
@@ -420,10 +413,11 @@
     }
 
     .form {
-        width: fit-content;
+        width: 100%;
         display: flex;
         align-items: stretch;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .subscribe_btn { 
@@ -446,6 +440,7 @@
 
     .payments-top-text h2 {
         font-size: 20px;
+        line-height: 30px;
     }
 
     .business_image {
@@ -461,7 +456,38 @@
         align-items: center;
     }
 
-   
+    .payment_feature_text h3 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .font-bg {
+      padding: 17px;
+    }
+
+    .payment_feature_text p {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .african_businesses_heading {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px; 
+    }
+
+    .subscribe_main h3 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px; 
+    }
+
+    .subscribe_main p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px
+    }
 }
 
 @media (max-width: 375px) {
