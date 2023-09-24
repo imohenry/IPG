@@ -244,6 +244,33 @@
     border: none;
   }
 
+  .scale_card:hover {
+    border: 1.5px solid;
+   
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, blue, magenta, red) 1 ;
+	animation: 10s rotate linear infinite;
+  border-radius: 8px !important;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  border-radius: 8px !important;
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* .card_container {
+  border-radius: 10px;
+} */
+
+
 /* ===============================
    INTEGRATE SECTION START 
 ================================== */
@@ -487,6 +514,10 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 20px
+    }
+
+    .scale_card {
+      border-image: conic-gradient(from var(--angle), red, yellow, lime, blue, magenta, red) 1 ;
     }
 }
 
