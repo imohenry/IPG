@@ -8,7 +8,7 @@
   .container {
     max-width: 1380px !important;
     margin: 0 auto !important;
-    padding: 2.5rem;
+    padding: 95px 100px;
     overflow: hidden !important;
   }
 
@@ -39,7 +39,7 @@
   }
 
   .no-up-pad {
-    padding: 0 2.5rem
+    padding: 0 100px
   }
   
 
@@ -70,6 +70,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 64px;
+    padding-bottom: 24px;
   }
 
   .banner_unique_text {
@@ -122,14 +123,17 @@
   .font-bg {
     height: 50px;
     width: 50px;
+    display: flex;
+    border: 6px solid #A8D6EF;
     background-color: #6EB4E0;
-    padding: 22px;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
   }
 
   .font-bg i {
    vertical-align: middle;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
   }
 
@@ -154,11 +158,12 @@
 
   .payment_feature_text {
     max-width: 347px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
 
   .payment_feature_text h3 {
     padding-bottom: 8px;
+    font-size: 20px;
   }
 
   .icon_container {
