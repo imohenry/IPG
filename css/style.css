@@ -13,7 +13,7 @@
   }
 
   .container_pad {
-    padding: 40px 2.5rem;
+    padding: 2.5rem 2.5rem 40px 95px;
   }
 
   .btn {
@@ -215,6 +215,7 @@
   .scale_card {
     width: 360px;
     /* height: 100%; */
+    display: flex;
     /* flex: 1; */
     color: #333;
     padding: 25px;
@@ -222,6 +223,12 @@
     background: #FFF;
     border-radius: 8px;
     border: 1px solid #E5E7EB;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .payment_feature_text p {
+    font-size: 15px;
   }
 
   .activate_feature_btn {
@@ -231,8 +238,10 @@
   }
 
   .scale_card_image {
-    max-width: 295px;
+    max-width: 160px;
+    margin: 0 auto;
     margin-top: 35px;
+    margin-bottom: 35px;
   }
 
   .scale_card_image img {
@@ -456,6 +465,10 @@
     .subscribe_btn { 
         margin: 0 !important;
     }
+
+    .container {
+      padding: 30px 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -525,6 +538,8 @@
     .scale_card {
       border-image: conic-gradient(from var(--angle), red, yellow, lime, blue, magenta, red) 1 ;
     }
+
+   
 }
 
 @media (max-width: 375px) {
