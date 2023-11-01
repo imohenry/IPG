@@ -466,6 +466,35 @@
     .banner_text {
       margin: 40px 0;
     }
+
+    .scale_card:hover {
+      border: 2px solid rgba(0, 0, 0, 0);
+      animation: spinner 2s;
+      animation-timing-function: cubic-bezier(0.57, -0.01, 0.45, 1.45);
+      animation-fill-mode: forwards;
+    }
+    @keyframes spinner {
+      0% {
+        border-radius: 8px;
+        border-right: 2px solid var(--V1, #fa9cfc);
+      }
+     
+      50% {
+        border-radius: 8px;
+        border-bottom: 2px solid var(--V2, #e0e06e);
+      }
+     
+      75% {
+        border-radius: 8px;
+        border-left: 2px solid var(--V3, #e393ff);
+      }
+     
+      100% {
+        border-radius: 8px;
+        border: 1.8px solid #a8d6ef;
+      }
+    }
+  
 }
 
 @media (max-width: 600px) {
@@ -597,3 +626,27 @@
         padding: 14px 12px;
     }
 }
+
+
+
+/* .scale_card:hover {
+  border: 1.5px solid;
+
+  --angle: 0deg;
+  border-image: conic-gradient(from var(--angle), red, yellow, lime, blue, magenta, red) 1 ;
+animation: 10s rotate linear infinite;
+border-radius: 8px !important;
+}
+
+@keyframes rotate {
+to {
+  --angle: 360deg;
+}
+}
+
+@property --angle {
+border-radius: 8px !important;
+syntax: '<angle>';
+initial-value: 0deg;
+inherits: false;
+} */
