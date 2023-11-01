@@ -13,7 +13,7 @@
   }
 
   .container_pad {
-    padding: 2.5rem 2.5rem 40px 95px;
+    padding: 2.5rem 2.5rem 0px 95px;
   }
 
   .btn {
@@ -191,8 +191,9 @@
   .african_businesses_flex {
     padding-top: 20px;
     display: flex;
+    gap: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .business_image {
@@ -217,7 +218,6 @@
     /* height: 100%; */
     display: flex;
     /* flex: 1; */
-    color: #333;
     padding: 25px;
     margin: 10px;
     background: #FFF;
@@ -234,7 +234,8 @@
   .activate_feature_btn {
     padding: 12px 16px;
     border-radius: 40px;
-    border: 1px solid #000;
+    border: 1px solid;
+    color: #000 !important;
   }
 
   .scale_card_image {
@@ -254,31 +255,39 @@
 
   .scale_card:hover .activate_feature_btn {
     background-color: #00B8DE;
-    color: #fff;
-    border: none;
+    color: #fff !important;
+    border: none !important;
   }
 
   .scale_card:hover {
-    border: 1.5px solid;
+    border: 2px solid rgba(0, 0, 0, 0);
+    animation: spinner 2s;
+    animation-timing-function: cubic-bezier(0.57, -0.01, 0.45, 1.45);
+    animation-fill-mode: forwards;
+  }
+  @keyframes spinner {
+    0% {
+      border-radius: 8px;
+      border-right: 2px solid var(--V1, #fa9cfc);
+    }
    
-    --angle: 0deg;
-    border-image: conic-gradient(from var(--angle), red, yellow, lime, blue, magenta, red) 1 ;
-	animation: 10s rotate linear infinite;
-  border-radius: 8px !important;
-}
+    50% {
+      border-radius: 8px;
+      border-bottom: 2px solid var(--V2, #e0e06e);
+    }
+   
+    75% {
+      border-radius: 8px;
+      border-left: 2px solid var(--V3, #e393ff);
+    }
+   
+    100% {
+      border-radius: 8px;
+      border: 1.8px solid #a8d6ef;
+    }
+  }
 
-@keyframes rotate {
-	to {
-		--angle: 360deg;
-	}
-}
 
-@property --angle {
-  border-radius: 8px !important;
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
 
 /* .card_container {
   border-radius: 10px;
@@ -289,11 +298,17 @@
    INTEGRATE SECTION START 
 ================================== */
 
+.integrate {
+  background-color: #EBF8FE;
+  position: relative;
+}
+
 .integrate_flex {
     display: flex;
     justify-content: space-between;
     overflow: hidden !important;
     padding-top: 40px;
+   
 }
 
 .integrate_text {
@@ -341,6 +356,7 @@
 .dashboard_img img {
     position: absolute;
     right: 0px;
+    bottom: 0;
     /* width: 550px; */
 }
 
@@ -430,8 +446,13 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .banner_image {
+      margin-bottom: -5px;
+    }
     .business_image {
         max-width: 130px;
+        
     }
 
     .african_businesses_flex {
@@ -440,6 +461,10 @@
 
     .dashbaord_features_flex {
         flex-direction: column;
+    }
+
+    .banner_text {
+      margin: 40px 0;
     }
 }
 
@@ -469,12 +494,37 @@
     .container {
       padding: 30px 40px;
     }
+
+    .no-up-pad {
+      padding: 0 40px
+    }
+
+    .payment_features_flex {
+      padding-top: 32px;
+    }
+
+    .payment_feature {
+      padding-bottom: 24px;
+  }
+
+  .icon_container {
+    padding-bottom: 8px;
+}
+
+.scale_cards_flex {
+  padding-top: 32px;
+}
+
+.integrate_text {
+
+  padding-top: 0px;
+}
 }
 
 @media (max-width: 480px) {
     .banner_text h1 {
         color: #fff;
-        font-size: 21px;
+        font-size: 24px;
         line-height: 30px;
         padding-bottom: 16px;
     }
@@ -490,15 +540,15 @@
     }
 
     .business_image {
-        max-width: 100px;
+        max-width: 80px;
     }
 
     .african_businesses_flex {
         padding-top: 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
-        gap: 19px;
+        gap: 20px;
         align-items: center;
     }
 
